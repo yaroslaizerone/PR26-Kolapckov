@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
+    <CheckBox
+        android:id="@+id/checkcandy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:text="Сладости"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
@@ -33,6 +42,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="4dp"
         android:text="Menu"
+        android:textColor="#2E2D2D"
         app:layout_constraintEnd_toStartOf="@+id/textView"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,102 +54,74 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:text="Завтрак"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/radioButton"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.511"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/cake" />
-
-    <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="40dp"
+        android:layout_width="135dp"
+        android:layout_height="117dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/checkcoffee"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:srcCompat="@drawable/coffee" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="71dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="28dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.587"
-        app:srcCompat="@drawable/eggs" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/cake" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="52dp"
-        app:layout_constraintBottom_toTopOf="@+id/radioButton4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton2"
-        app:layout_constraintVertical_bias="0.432"
-        app:srcCompat="@drawable/tea" />
-
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Сладости"
-        app:layout_constraintEnd_toStartOf="@+id/radioButton2"
-        app:layout_constraintHorizontal_bias="0.401"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="157dp"
-        android:text="Кофе"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.747"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView2" />
-
-    <RadioButton
-        android:id="@+id/radioButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Комбо"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.226"
+        app:layout_constraintHorizontal_bias="0.892"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.762" />
+        app:layout_constraintVertical_bias="0.648"
+        app:srcCompat="@drawable/tea" />
 
-    <RadioButton
-        android:id="@+id/radioButton4"
+    <CheckBox
+        android:id="@+id/checktea"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Чай"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.522"
-        app:layout_constraintStart_toEndOf="@+id/radioButton3"
+        app:layout_constraintHorizontal_bias="0.779"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.762" />
+        app:layout_constraintVertical_bias="0.822" />
+
+    <CheckBox
+        android:id="@+id/checkcombo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:text="Комбо"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="324dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/eggs" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -148,19 +130,79 @@
         android:background="#BBF4E3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.989" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonresult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Показать результат"
+        android:textColor="#2E2D2D"
         app:layout_constraintBottom_toTopOf="@+id/imageView5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.94" />
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/faceb" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/watsapp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.729"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/inst" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/twit" />
+
+    <CheckBox
+        android:id="@+id/checkcoffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Кофе"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.799"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.474" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -121,7 +121,7 @@
         android:text="Добавки"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toEndOf="@+id/switch4"
         app:layout_constraintTop_toBottomOf="@+id/spinner"
         app:layout_constraintVertical_bias="0.0" />
@@ -132,7 +132,7 @@
         android:layout_height="48dp"
         android:layout_marginStart="36dp"
         android:layout_marginBottom="384dp"
-        android:entries="@array/coffee"
+        android:entries="@array/cake"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -165,7 +165,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
-        android:text="Кофе с карамелью"
+        android:text="Шаколадный торт"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.901"
         app:layout_constraintStart_toStartOf="parent"
@@ -173,15 +173,15 @@
 
     <ImageView
         android:id="@+id/imageView10"
-        android:layout_width="128dp"
-        android:layout_height="108dp"
+        android:layout_width="115dp"
+        android:layout_height="77dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintHorizontal_bias="0.263"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.118"
-        app:srcCompat="@drawable/coffee_next" />
+        app:layout_constraintVertical_bias="0.126"
+        app:srcCompat="@drawable/tort" />
 
     <TextView
         android:id="@+id/textView7"
@@ -189,7 +189,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginBottom="512dp"
-        android:text="140 р"
+        android:text="250 р"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView10" />

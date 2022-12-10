@@ -15,9 +15,7 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
-public class MainActivity3 extends AppCompatActivity {
-
+public class MainActivity5 extends AppCompatActivity {
     TextView textcost;
     Spinner spin;
     Switch sw1;
@@ -29,11 +27,10 @@ public class MainActivity3 extends AppCompatActivity {
     TextView textname;
     Button but;
     Button but2;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
+        setContentView(R.layout.activity_main5);
         but2 = findViewById(R.id.button4);
         but = findViewById(R.id.button3);
         textcost = findViewById(R.id.textView7);
@@ -103,13 +100,12 @@ public class MainActivity3 extends AppCompatActivity {
                         intent.setData(Uri.parse("geo:-0.45609946,-90.26607513"));
                         startActivity(intent);
                         break;
-            }}
+                }}
         });
         but2.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
-                Intent intent = new Intent(MainActivity3.this, data.class);
+                Intent intent = new Intent(MainActivity5.this, data.class);
                 startActivity(intent);
-                }
+            }
         });
-    }
-}
+}}

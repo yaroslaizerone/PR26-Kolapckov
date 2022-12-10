@@ -1,4 +1,27 @@
 <resources>
     <string name="app_name">PR26</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string-array name="coffee">
+        <item>Нежный бархатный вкус</item>
+        <item>Горький насыщенный вкус</item>
+        <item>Молочная пастела</item>
+        <item>Игристая карамель</item>
+    </string-array>
+    <string-array name="tea">
+        <item>Индийский чай</item>
+        <item>Чай Пуэр</item>
+        <item>Чай с мятой</item>
+        <item>Чай с мёдом и имберём</item>
+    </string-array>
+    <string-array name="breakfast">
+        <item>Глазунья с беконом</item>
+        <item>Бизнес сэндвичи</item>
+        <item>Каша овсянная с лесными ягодами</item>
+    </string-array>
+    <string-array name="cake">
+        <item>Бисквитный</item>
+        <item>Воздушный</item>
+        <item>Кремовый</item>
+        <item>Медовик</item>
+    </string-array>
 </resources>

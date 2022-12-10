@@ -4,28 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#BBF4E3">
+    tools:context=".MainActivity2">
 
-    <ImageView
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/cup"
+        android:layout_marginEnd="76dp"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="Вывести список заказов"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.381"></ImageView>
-
-    <TextView
+        app:layout_constraintVertical_bias="0.458" />
+    //
+    <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Кофейня “Бодрость”"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.526" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:textSize="14dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button" />
+    </ScrollView>
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
