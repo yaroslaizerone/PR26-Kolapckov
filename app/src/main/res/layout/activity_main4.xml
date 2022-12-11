@@ -18,8 +18,8 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="77dp"
-        android:layout_height="48dp"
+        android:layout_width="98dp"
+        android:layout_height="45dp"
         android:layout_marginTop="4dp"
         android:text="Menu"
         android:textColor="#2E2D2D"
@@ -173,8 +173,8 @@
 
     <ImageView
         android:id="@+id/imageView10"
-        android:layout_width="97dp"
-        android:layout_height="75dp"
+        android:layout_width="176dp"
+        android:layout_height="189dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.152"
