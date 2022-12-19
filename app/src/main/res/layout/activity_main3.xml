@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity3">
 
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="56dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="424dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/buttonzakaz" />
+
     <TextView
         android:id="@+id/textView4"
         android:layout_width="146dp"
@@ -63,7 +73,7 @@
         android:textColor="#2E2D2D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintHorizontal_bias="0.123"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -88,6 +98,7 @@
         android:textColor="#2E2D2D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Switch

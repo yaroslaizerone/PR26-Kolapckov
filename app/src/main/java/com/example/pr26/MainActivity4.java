@@ -10,6 +10,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -28,6 +29,7 @@ public class MainActivity4 extends AppCompatActivity {
     TextView textname;
     Button but;
     Button but2;
+    ImageView but3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +46,7 @@ public class MainActivity4 extends AppCompatActivity {
         textclientname = findViewById(R.id.editText2);
         textclientphone = findViewById(R.id.editText);
         textname = findViewById(R.id.textView6);
+        but3 = findViewById(R.id.imageView19);
 
         Button button = findViewById(R.id.button5);
         button.setOnClickListener(new View.OnClickListener(){
@@ -107,6 +110,12 @@ public class MainActivity4 extends AppCompatActivity {
         but2.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
                 Intent intent = new Intent(MainActivity4.this, data.class);
+                startActivity(intent);
+            }
+        });
+        but3.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view){
+                Intent intent = new Intent(MainActivity4.this, MainActivity7.class);
                 startActivity(intent);
             }
         });

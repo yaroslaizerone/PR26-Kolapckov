@@ -58,12 +58,34 @@
         android:id="@+id/button5"
         android:layout_width="281dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="56dp"
         android:text="Отправить"
         android:textColor="#2E2D2D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="56dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="440dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/buttonzakaz" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="281dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:text="Найти кафе"
+        android:textColor="#2E2D2D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -78,17 +100,6 @@
         app:layout_constraintStart_toStartOf="parent">
 
     </EditText>
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="281dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="16dp"
-        android:text="Найти кафе"
-        android:textColor="#2E2D2D"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <Switch
         android:id="@+id/switch2"
